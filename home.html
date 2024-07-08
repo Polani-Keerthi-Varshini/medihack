@@ -1,0 +1,411 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HEALTH CARE</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+}
+
+.header {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url('https://online.hbs.edu/Style%20Library/api/resize.aspx?imgpath=/online/PublishingImages/blog/health-care-economics.jpg&w=1200&h=630') no-repeat center center/cover;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 15px;
+}
+
+.nav-links a:hover {
+    background: #007BFF;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.appointment-btn {
+    background: #007BFF;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 80px); /* Adjust based on the navbar height */
+    text-align: center;
+    color: #fff;
+}
+
+.hero-content {
+    max-width: 600px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.hero-content h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.hero-content .appointment-btn {
+    padding: 10px 20px;
+    font-size: 1em;
+    text-decoration: none;
+    color: #fff;
+    background: #007BFF;
+    border-radius: 5px;
+}
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+
+
+
+h1 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.questions-container {
+    display: grid; /* Use a grid layout for two columns */
+    grid-template-columns: repeat(2, 1fr); /* Define two columns of equal width */
+    grid-gap: 20px; /* Add spacing between question-answer pairs */
+}
+
+.question-answer {
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.question-answer h2 {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+.contact-form {
+  width: 500px; /* Adjust width as needed */
+  background-color: #F0F0F0;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 1.5em;
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin-bottom: 15px;
+}
+
+textarea {
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin-bottom: 15px;
+}
+
+button[type="submit"] {
+  background-color: #4CAF50; /* Change button color if needed based on image */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #3e8e41; /* Optional: change button hover color */
+}
+
+.social-links {
+  text-align: center; /* Center the icons horizontally */
+}
+
+.social-links a {
+  margin: 0 10px; /* Add spacing between icons */
+}
+
+.social-links a img {
+  width: 25px; /* Adjust icon size as needed */
+}
+.copyright {
+  text-align: center;
+  margin-top: 10px; /* Add spacing above copyright text */
+}
+
+
+.scroll-container {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: scroll 20s linear infinite;
+}
+
+.scroll-container img {
+  width: 20%;
+  display: inline-block;
+}
+
+@keyframes scroll {
+  0% {transform: translateX(0);}
+ 100% {transform: translateX(-100%);}
+}
+
+
+
+
+h1 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.questions-container {
+    display: grid; /* Use a grid layout for two columns */
+    grid-template-columns: repeat(2, 1fr); /* Define two columns of equal width */
+    grid-gap: 20px; /* Add spacing between question-answer pairs */
+}
+
+.question-answer {
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.question-answer h2 {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+.contact-form {
+  width: 500px; /* Adjust width as needed */
+  background-color: #F0F0F0;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 1.5em;
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin-bottom: 15px;
+}
+
+textarea {
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin-bottom: 15px;
+}
+
+button[type="submit"] {
+  background-color: #4CAF50; /* Change button color if needed based on image */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #3e8e41; /* Optional: change button hover color */
+}
+
+.social-links {
+  text-align: center; /* Center the icons horizontally */
+}
+
+.social-links a {
+  margin: 0 10px; /* Add spacing between icons */
+}
+
+.social-links a img {
+  width: 25px; /* Adjust icon size as needed */
+}
+.copyright {
+  text-align: center;
+  margin-top: 10px; /* Add spacing above copyright text */
+}
+
+.scroll-container {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: scroll 20s linear infinite;
+}
+
+.scroll-container img {
+  width: 20%;
+  display: inline-block;
+}
+
+@keyframes scroll {
+  0% {transform: translateX(0);}
+ 100% {transform: translateX(-100%);}
+}
+
+    </style>
+
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">HEALTH CARE</div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Doctors</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#" class="appointment-btn">Make an Appointment</a></li>
+            </ul>
+        </nav>
+        <div class="hero">
+            <div class="hero-content">
+                <h1>Modern CARE in a Calm and Relaxed Environment</h1>
+                <p>Empowering Patients Through Innovation and Personalized Care</p>
+                <a href="#" class="appointment-btn">Make an Appointment</a>
+            </div>
+        </div>
+    </header>
+<br><br><br>
+<marquee behavior="scroll" direction="right">
+        <img src="https://www.shutterstock.com/image-photo/hand-arranging-wood-block-healthcare-260nw-1561815367.jpg" alt="Smartwatch with Heart Rate Monitor">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhiOiPpiFEtHpJ9TGY8Tw5kUaN3jXCrO9uZA&s" alt="Telemedicine Appointment">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYELbzjcTiWg68vuTK6ufqqoODXqaHd3mrLA&s" alt="Meditation App">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9-1BUWZ6Pj8xtttj-CxRaQg65Oal8h7Fb5A&s" alt="Fitness Tracker">
+        <img src="https://www.ox.ac.uk/sites/files/oxford/styles/ow_content_medium/s3/media_wysiwyg/image-20160112-6972-134ll8m%20370.jpg?itok=Zd6Bc7xk" alt="DNA Testing Kit">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSzHlDOCVkqnLlyGUYBK0ySg_EbGMIQuFyrg&s" alt="Robot-Assisted Surgery">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgS4a9HXbliFCDjBZDosYOy53NcR_jV5wnPw&s" alt="Virtual Reality Physical Therapy">
+        <img src="https://media.nurse.org/images/blog/2023/05/07/image_66242614051683485504849.png" alt="Artificial Intelligence Nurse Assistant">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRswyECvwcTcwKemDZsUk3gK2-FmokOeOgf4Q&s" alt="3D Printed Prosthetic Limb">
+        <img src="https://www.shutterstock.com/image-photo/hand-arranging-wood-block-healthcare-260nw-1561815367.jpg" alt="Smartwatch with Heart Rate Monitor">
+    </marquee>
+
+    <h1>Curious Minds Ask</h1>
+    <div class="questions-container">
+        <div class="question-answer">
+            <h2>Chatbot for Health Queries?</h2>
+            <p>Yes, our patient healthcare chatbot is here to assist you 24/7 with all your health-related questions and concerns.</p>
+        </div>
+        <div class="question-answer">
+            <h2>How Secure is My Data?</h2>
+            <p>Rest assured, we prioritize data security with state-of-the-art encryption to keep your information safe and confidential.</p>
+        </div>
+        <div class="question-answer">
+            <h2>What's Special for Diabetes Management?</h2>
+            <p>For diabetes warriors, we offer exclusive features tailored to manage and monitor your condition effectively.</p>
+        </div>
+        <div class="question-answer">
+            <h2>How about Telehealth Services?</h2>
+            <p>Experience the future of healthcare with our seamless telehealth services connecting you with medical professionals from anywhere.</p>
+        </div>
+    </div>
+
+
+    <form class="contact-form">
+        <h2>Get in Touch Now!</h2>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Your Name">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Your Email">
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" placeholder="Your Phone Number">
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" placeholder="Write your message here..."></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+      <div class="social-links">
+        <a href="https://www.facebook.com/your-page" target="_blank"><img src="facebook.png" alt="Facebook"></a>
+        <a href="https://www.twitter.com/your-page" target="_blank"><img src="twitter.png" alt="Twitter"></a>
+        </div>
+        <p class="copyright">&copy; 2024 Healthcare</p>
+
+
+</body>
+</html>
