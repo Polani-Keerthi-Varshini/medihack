@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealthCare Plus - About Us</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff;
+        }
+        header {
+            background: linear-gradient(135deg, #0077be, #00a86b);
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 2rem 0;
+        }
+        .card {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            margin-bottom: 2rem;
+            padding: 2rem;
+            transition: transform 0.3s ease-in-out;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .icon {
+            font-size: 3rem;
+            color: #0077be;
+            margin-bottom: 1rem;
+        }
+        h2 {
+            color: #00a86b;
+        }
+        .cta-button {
+            display: inline-block;
+            background-color: #0077be;
+            color: white;
+            padding: 0.8rem 1.5rem;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .cta-button:hover {
+            background-color: #005f9e;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>HealthCare Plus</h1>
+        <p>Caring for you, every step of the way</p>
+    </header>
+
+    <div class="container">
+        <div class="card">
+            <div class="icon">&#128172;</div>
+            <h2>Our Mission</h2>
+            <p>At HealthCare Plus, we're committed to providing compassionate, high-quality care to our community. Our mission is to improve the health and well-being of our patients through innovative treatments and personalized care plans.</p>
+        </div>
+
+        <div class="card">
+            <div class="icon">&#127919;</div>
+            <h2>Our Vision</h2>
+            <p>We envision a future where everyone has access to exceptional healthcare. Through continuous improvement and cutting-edge technology, we aim to set new standards in patient care and medical excellence.</p>
+        </div>
+
+        <div class="card">
+            <div class="icon">&#129658;</div>
+            <h2>Our Team</h2>
+            <p>Our dedicated team of healthcare professionals brings together years of experience and expertise. From our skilled doctors to our compassionate nurses, we work together to ensure you receive the best possible care.</p>
+        </div>
+
+        <div class="card">
+            <div class="icon">&#127973;</div>
+            <h2>Our Facilities</h2>
+            <p>Our state-of-the-art facilities are equipped with the latest medical technology. We provide a comfortable and healing environment for all our patients, whether you're here for a routine check-up or specialized treatment.</p>
+        </div>
+
+        <div style="text-align: center; margin-top: 2rem;">
+            <a href="#" class="cta-button">Schedule an Appointment</a>
+        </div>
+    </div>
+</body>
+</html>
